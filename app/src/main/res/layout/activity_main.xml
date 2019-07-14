@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculateBtn"
+        android:hint="@string/countIteration"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/calculateBtn"
+        style="@style/BtnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iterac"
+        android:text="@string/calculate_btn" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        style="@style/BtnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iterac"
+        android:layout_toEndOf="@+id/calculateBtn"
+        android:text="@string/cancel_btn" />
+
+    <TextView
+        android:id="@+id/result_textView"
+        style="@style/BtnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="@string/result_pi" />
+
+    <TextView
+        android:id="@+id/pi"
+        style="@style/BtnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:layout_toEndOf="@+id/result_textView" />
+
+    <TextView
+        android:id="@+id/iterac"
+        style="@style/BtnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pi"
+        android:layout_margin="6dp"
+        android:text="@string/count" />
+
+    <TextView
+        android:id="@+id/result_iterac"
+        style="@style/BtnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_textView"
+        android:layout_margin="6dp"
+        android:layout_toEndOf="@+id/iterac" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

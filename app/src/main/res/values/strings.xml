@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Koteln</string>
+    <string name="calculate_btn">Вычислить</string>
+    <string name="cancel_btn">Отменить</string>
+    <string name="result_pi">Результат вычисления</string>
+    <string name="count">Кол-во точек в области</string>
+    <string name="countIteration">Введите количество итераций</string>
+</resources>
